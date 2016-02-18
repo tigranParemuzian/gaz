@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+  <services>
+
+    <service id="set_data_from_url" class="Gaz\MainBundle\Service\SetDataService">
+      <argument type="service" id="service_container" />
+    </service>
+
+      <!-- Contact -->
+
+  <!--<service id="mankapartez.main.admin.contact" class="Mankapartez\MainBundle\Admin\ContactAdmin">-->
+      <!--<tag name="sonata.admin" manager_type="orm" group="Content" label="Contact"/>-->
+      <!--<argument/>-->
+      <!--<argument>Mankapartez\MainBundle\Entity\Contact</argument>-->
+      <!--<argument>SonataAdminBundle:CRUD</argument>-->
+
+      <!--<argument type="collection">-->
+        <!--<argument key="layout">SonataAdminBundle::standard_layout.html.twig</argument>-->
+        <!--<argument key="ajax">SonataAdminBundle::ajax_layout.html.twig</argument>-->
+        <!--<argument key="edit">MankapartezMainBundle:Admin:edit_i18n.html.twig</argument>-->
+        <!--<argument key="show">SonataAdminBundle:CRUD:show.html.twig</argument>-->
+      <!--</argument>-->
+    <!--</service>-->
+
+
+  </services>
+</container>

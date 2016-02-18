@@ -1,0 +1,33 @@
+{% extends 'GazMainBundle::layout.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/gazmain/css/myStyle.css') }}">
+{% endblock %}
+ {% block contentMain %}
+     <div class="row" style="margin-top: 80px;">
+         {% for id in data %}
+             <div class="col-xs-6 col-sm-4" >
+                 <div class="card card-block">
+                     <div id="main_div_{{ id|first }}" class="cart{{ id|first }}">
+                         <div  class="card-title" >
+                             <h4 id="{{ id|first }}"  class="card-title activator grey-text text-darken-4"><i id="{{ id|first }}" class="material-icons right clicable"></i></h4>
+                             <p class="data{{ id|first }} card-text"></p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             {% if id|first == 2 or id|first == 4 %}
+                 <div class="clearfix visible-xs-block"></div>
+             {% endif %}
+             {% if id|first == 3 %}
+                <br/>
+             {% endif %}
+         {% endfor %}
+
+     </div>
+ {% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/gazmain/js/data.js') }}"></script>
+{% endblock %}

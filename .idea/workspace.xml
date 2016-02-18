@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ccfca03d-531e-4790-96f7-ad4364c7be9f" name="Default" comment="" />
+    <ignored path="gaz.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="gaz">
+      <favorite_root url="file://$PROJECT_DIR$/composer.json" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="transfer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/transfer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="99" column="38" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="38" />
+              <folding>
+                <marker date="1455393589665" expanded="true" signature="8586:8596" placeholder="..." />
+                <marker date="1455393589665" expanded="true" signature="9011:9021" placeholder="..." />
+                <marker date="1455393589665" expanded="true" signature="9849:10109" placeholder="..." />
+                <marker date="1455393589665" expanded="true" signature="10193:10203" placeholder="..." />
+                <marker date="1455393589665" expanded="true" signature="11020:11030" placeholder="..." />
+                <marker date="1455393589665" expanded="true" signature="11979:11989" placeholder="..." />
+                <marker date="1455393589665" expanded="true" signature="12221:12231" placeholder="..." />
+                <marker date="1455393589665" expanded="true" signature="12953:12963" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6693679">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Controller/Rest/DataController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="587" column="18" selection-start-line="587" selection-start-column="18" selection-end-line="587" selection-end-column="18" />
+              <folding>
+                <element signature="e#2116#2492#0#PHP" expanded="false" />
+                <element signature="e#6279#6638#0#PHP" expanded="false" />
+                <element signature="e#6643#7018#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Change.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Change.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="17" />
+              <folding>
+                <element signature="e#41#73#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangeRepositories.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/ChangeRepositories.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataWorcer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/dataWorcer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="437" column="35" selection-start-line="437" selection-start-column="18" selection-end-line="437" selection-end-column="35" />
+              <folding>
+                <element signature="n#!!doc;n#deleteLastreRuest#0" expanded="false" />
+                <element signature="n#!!doc;n#clerDellData#0" expanded="false" />
+                <element signature="n#!!block;n#clerDellData#0" expanded="false" />
+                <element signature="n#!!doc;n#navbarData#0" expanded="false" />
+                <marker date="1455389731883" expanded="true" signature="4281:4291" placeholder="..." />
+                <marker date="1455389731883" expanded="true" signature="5591:5601" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginCart.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/views/Main/loginCart.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+              <folding>
+                <marker date="1455386465358" expanded="true" signature="3401:3415" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="3416:4218" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="3460:4207" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="3500:4192" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="3543:3834" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="3640:3728" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="3875:4173" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="3918:4010" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4057:4150" placeholder="..." />
+                <marker date="1455386465358" expanded="false" signature="4380:4394" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4395:5458" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4439:5447" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4479:5432" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4522:4811" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4619:4707" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4852:5413" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="4895:4984" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5028:5117" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5164:5254" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5298:5390" placeholder="..." />
+                <marker date="1455386465358" expanded="false" signature="5637:5651" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5652:6877" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5696:6866" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5736:6851" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5779:6068" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="5876:5964" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="6109:6832" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="6160:6282" placeholder="..." />
+                <marker date="1455386465358" expanded="false" signature="7078:7092" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7093:8700" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7137:8689" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7177:8674" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7220:7517" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7317:7405" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7558:8655" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7603:7701" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="7748:7970" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="8015:8269" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="8318:8555" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="8604:8632" placeholder="..." />
+                <marker date="1455386465358" expanded="false" signature="8881:8895" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="8896:9886" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="8940:9875" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="8980:9860" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="9023:9320" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="9120:9208" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="9361:9840" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="9412:9542" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="9789:9817" placeholder="..." />
+                <marker date="1455386465358" expanded="false" signature="10063:10077" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10078:11149" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10122:11138" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10162:11123" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10205:10522" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10321:10409" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10563:11103" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10614:10738" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="10985:11013" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="11052:11080" placeholder="..." />
+                <marker date="1455386465358" expanded="false" signature="14548:14562" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="14563:15434" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="14607:15423" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="14647:15408" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="14690:14995" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="14787:14875" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15036:15389" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15268:15366" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15634:15648" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15649:16510" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15693:16499" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15733:16484" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15776:16074" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="15873:15961" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="16115:16465" placeholder="..." />
+                <marker date="1455386465358" expanded="true" signature="16347:16442" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Company.php" />
+        <option value="$PROJECT_DIR$/app/logs/prod.log" />
+        <option value="$PROJECT_DIR$/web/app_dev.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/TerminalRepositories.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/homepage.js" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/views/Main/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Gaz/UserBundle/Admin/Model/UserAdmin.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Gaz/UserBundle/Security/User/Provider/MyProvider.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/UserBundle/GazUserBundle.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/UserBundle/Handler/AuthenticationHandler.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
+        <option value="$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/standard_layout.html.twig" />
+        <option value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Resources/views/Core/user_block.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/Core/user_block.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Finance.php" />
+        <option value="$PROJECT_DIR$/app/logs/urldataerror.log" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Service/SetDataService.php" />
+        <option value="$PROJECT_DIR$/app/logs/urldataok.log" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Command/RunSingleProcessCommand.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Command/SetDataCommand.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/FinanceRepositories.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/LoginProviderRepositories.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/css/myStyle.css" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Controller/MainController.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/config/admin.xml" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Settings.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Admin/FinanceAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Admin/ClientAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Admin/LoginLogsAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Admin/SettingsAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/ManyTransferRepositories.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/ManyTransfer.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Change.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/ChangeRepositories.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/data.js" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/views/Main/loginCart.html.twig" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/dataWorcer.js" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Client.php" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/transfer.js" />
+        <option value="$PROJECT_DIR$/src/Gaz/MainBundle/Controller/Rest/DataController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpDebugGeneral" notify_if_session_was_finished_without_being_paused="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="gaz.loc" id="ce378778-c6ad-412d-9690-26df2a0b090c" name="gaz" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parameters.yml" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="options.lastSelected" value="Symfony2.SettingsForm" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="SearchEverywhereHistoryKey" value="Finan&#9;FILE&#9;file:///var/www/html/gaz/src/Gaz/MainBundle/Entity/Finance.php&#10;Main&#9;FILE&#9;file:///var/www/html/gaz/src/Gaz/MainBundle/Controller/MainController.php&#10;SetDa&#9;FILE&#9;file:///var/www/html/gaz/src/Gaz/MainBundle/Command/SetDataCommand.php&#10;Bu&#9;FILE&#9;file:///var/www/html/gaz/src/Gaz/MainBundle/Menu/Builder.php" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Gaz/MainBundle/Admin" />
+      <recent name="$PROJECT_DIR$/src/Gaz/MainBundle/Command" />
+      <recent name="$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/Core" />
+      <recent name="$PROJECT_DIR$/src/Gaz/MainBundle/Entity" />
+      <recent name="$PROJECT_DIR$/src/Gaz/UserBundle" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Resources/SonataAdminBundle/views" />
+      <recent name="$PROJECT_DIR$/app/Resources" />
+      <recent name="$PROJECT_DIR$/src/Gaz" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gaz" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" singleton="true" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="gaz">
+      <method />
+    </configuration>
+    <configuration default="false" name="TerminalType" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner directory="$PROJECT_DIR$/src/Gaz/MainBundle/Form" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.gaz" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit.TerminalType" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ccfca03d-531e-4790-96f7-ad4364c7be9f" name="Default" comment="" />
+      <created>1437382217013</created>
+      <option name="number" value="Default" />
+      <updated>1437382217013</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1992032" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828686" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23266932" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44425088" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39876354" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="49" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/views/Main/loginCart.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding>
+            <marker date="1455386465358" expanded="true" signature="3401:3415" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3416:4218" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3460:4207" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3500:4192" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3543:3834" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3640:3728" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3875:4173" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3918:4010" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4057:4150" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="4380:4394" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4395:5458" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4439:5447" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4479:5432" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4522:4811" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4619:4707" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4852:5413" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4895:4984" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5028:5117" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5164:5254" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5298:5390" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="5637:5651" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5652:6877" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5696:6866" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5736:6851" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5779:6068" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5876:5964" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="6109:6832" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="6160:6282" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="7078:7092" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7093:8700" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7137:8689" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7177:8674" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7220:7517" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7317:7405" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7558:8655" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7603:7701" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7748:7970" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8015:8269" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8318:8555" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8604:8632" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="8881:8895" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8896:9886" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8940:9875" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8980:9860" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9023:9320" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9120:9208" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9361:9840" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9412:9542" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9789:9817" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="10063:10077" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10078:11149" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10122:11138" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10162:11123" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10205:10522" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10321:10409" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10563:11103" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10614:10738" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10985:11013" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="11052:11080" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="14548:14562" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14563:15434" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14607:15423" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14647:15408" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14690:14995" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14787:14875" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15036:15389" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15268:15366" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15634:15648" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15649:16510" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15693:16499" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15733:16484" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15776:16074" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15873:15961" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="16115:16465" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="16347:16442" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/RedirectResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3313253">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45783132">
+          <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Controller/CoreController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7355932">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5925927">
+          <caret line="93" column="41" selection-start-line="93" selection-start-column="41" selection-end-line="93" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33147633">
+          <caret line="3110" column="0" selection-start-line="3110" selection-start-column="0" selection-end-line="3110" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOS/UserBundle/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.392857">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="52" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Resources/views/standard_layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.666667">
+          <caret line="19" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Resources/views/Core/user_block.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/standard_layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.698305">
+          <caret line="164" column="69" selection-start-line="164" selection-start-column="69" selection-end-line="164" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/SonataAdminBundle/views/Core/user_block.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="142" selection-start-line="0" selection-start-column="142" selection-end-line="0" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Command/RunSingleProcessCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.803571">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Service/SetDataService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.185185">
+          <caret line="98" column="77" selection-start-line="97" selection-start-column="28" selection-end-line="98" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Command/SetDataCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29411766">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/670b2484-bf21-4314-936b-de2bea13b94a">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>670b2484-bf21-4314-936b-de2bea13b94a</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="488.0" y="295.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/LoginProviderRepositories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/css/myStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6644068">
+          <caret line="140" column="30" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/TerminalRepositories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6542373">
+          <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/ClientRepositories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.851851">
+          <caret line="100" column="20" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/LoginProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/config/admin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Admin/CompanyAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6237289">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Admin/SettingsAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.84745765">
+          <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Admin/LoginLogsAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72542375">
+          <caret line="81" column="61" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Admin/ClientAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7864407">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Admin/FinanceAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.037288137">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Admin/TerminalAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Admin/StationAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1050848">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Finance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="61" column="97" selection-start-line="61" selection-start-column="67" selection-end-line="61" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.333334">
+          <caret line="69" column="5" selection-start-line="48" selection-start-column="4" selection-end-line="69" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/ManyTransferRepositories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.851851">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/ManyTransfer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7559322">
+          <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.554295">
+          <caret line="31" column="73" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37925446">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/FinanceRepositories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65254235">
+          <caret line="138" column="109" selection-start-line="138" selection-start-column="109" selection-end-line="138" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/views/Main/loginCart.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding>
+            <marker date="1455386465358" expanded="true" signature="3401:3415" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3416:4218" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3460:4207" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3500:4192" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3543:3834" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3640:3728" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3875:4173" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="3918:4010" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4057:4150" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="4380:4394" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4395:5458" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4439:5447" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4479:5432" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4522:4811" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4619:4707" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4852:5413" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="4895:4984" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5028:5117" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5164:5254" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5298:5390" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="5637:5651" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5652:6877" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5696:6866" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5736:6851" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5779:6068" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="5876:5964" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="6109:6832" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="6160:6282" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="7078:7092" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7093:8700" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7137:8689" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7177:8674" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7220:7517" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7317:7405" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7558:8655" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7603:7701" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="7748:7970" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8015:8269" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8318:8555" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8604:8632" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="8881:8895" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8896:9886" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8940:9875" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="8980:9860" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9023:9320" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9120:9208" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9361:9840" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9412:9542" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="9789:9817" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="10063:10077" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10078:11149" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10122:11138" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10162:11123" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10205:10522" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10321:10409" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10563:11103" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10614:10738" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="10985:11013" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="11052:11080" placeholder="..." />
+            <marker date="1455386465358" expanded="false" signature="14548:14562" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14563:15434" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14607:15423" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14647:15408" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14690:14995" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="14787:14875" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15036:15389" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15268:15366" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15634:15648" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15649:16510" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15693:16499" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15733:16484" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15776:16074" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="15873:15961" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="16115:16465" placeholder="..." />
+            <marker date="1455386465358" expanded="true" signature="16347:16442" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Repositories/ChangeRepositories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6101695">
+          <caret line="119" column="21" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15254237">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/dataWorcer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="437" column="35" selection-start-line="437" selection-start-column="18" selection-end-line="437" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc;n#deleteLastreRuest#0" expanded="false" />
+            <element signature="n#!!doc;n#clerDellData#0" expanded="false" />
+            <element signature="n#!!block;n#clerDellData#0" expanded="false" />
+            <element signature="n#!!doc;n#navbarData#0" expanded="false" />
+            <marker date="1455389731883" expanded="true" signature="4281:4291" placeholder="..." />
+            <marker date="1455389731883" expanded="true" signature="5591:5601" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Entity/Change.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="17" />
+          <folding>
+            <element signature="e#41#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Controller/Rest/DataController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="587" column="18" selection-start-line="587" selection-start-column="18" selection-end-line="587" selection-end-column="18" />
+          <folding>
+            <element signature="e#2116#2492#0#PHP" expanded="false" />
+            <element signature="e#6279#6638#0#PHP" expanded="false" />
+            <element signature="e#6643#7018#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gaz/MainBundle/Resources/public/js/transfer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="99" column="38" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="38" />
+          <folding>
+            <marker date="1455393589665" expanded="true" signature="8586:8596" placeholder="..." />
+            <marker date="1455393589665" expanded="true" signature="9011:9021" placeholder="..." />
+            <marker date="1455393589665" expanded="true" signature="9849:10109" placeholder="..." />
+            <marker date="1455393589665" expanded="true" signature="10193:10203" placeholder="..." />
+            <marker date="1455393589665" expanded="true" signature="11020:11030" placeholder="..." />
+            <marker date="1455393589665" expanded="true" signature="11979:11989" placeholder="..." />
+            <marker date="1455393589665" expanded="true" signature="12221:12231" placeholder="..." />
+            <marker date="1455393589665" expanded="true" signature="12953:12963" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6693679">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

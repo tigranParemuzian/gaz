@@ -1,0 +1,72 @@
+<?php
+
+namespace Gaz\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * CashInfo
+ *
+ * @ORM\Table()
+ * @ORM\Entity
+ */
+class CashInfo
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="cash", type="integer")
+     */
+    private $cash;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="created", type="datetime", nullable=false)
+     */
+    private $created;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set cash
+     *
+     * @param integer $cash
+     * @return CashInfo
+     */
+    public function setCash($cash)
+    {
+        $this->cash = $cash;
+
+        return $this;
+    }
+
+    /**
+     * Get cash
+     *
+     * @return integer 
+     */
+    public function getCash()
+    {
+        return $this->cash;
+    }
+
+}

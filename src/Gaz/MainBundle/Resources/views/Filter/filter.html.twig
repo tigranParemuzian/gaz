@@ -1,0 +1,67 @@
+{% extends 'GazMainBundle::layout.html.twig' %}
+ {% block contentMain %}
+     <div class="container ">
+         {{ form_start(form) }}
+            {{ form_widget(form.save) }}
+         <table class="table">
+             <thead>
+             <tr>
+                 <th data-field="id">hh</th>
+                 <th data-field="terminal">Terminal</th>
+                 <th data-field="buyer">Buyers</th>
+                 <th data-field="worker">Worker</th>
+                 <th data-field="price">Price</th>
+                 <th data-field="balance">Balance</th>
+                 <th data-field="deposit">Deposit</th>
+                 <th data-field="residue">Residue</th>
+                 <th data-field="created">Created</th>
+             </tr>
+             </thead>
+
+             <tbody>
+             <tr>
+                 <td>{{ form_widget(form.id)}}</td>
+                 <td>{{ form_widget(form.terminal)}}</td>
+                 <td>{{ form_widget(form.buyer)}}</td>
+                 <td>{{ form_widget(form.worker)}}</td>
+                 <td>{{ form_widget(form.price)}}</td>
+                 <td>{{ form_widget(form.balance)}}</td>
+                 <td>{{ form_widget(form.deposit)}}</td>
+                 <td>{{ form_widget(form.residue)}}</td>
+                 <td >
+                     <div class='date' >
+                         {{ form_widget(form.created)}}
+                     </div>
+                 </td>
+                 {{ form_end(form) }}
+             </tr>
+             {% set i = 1 %}
+             {% for table in pagination %}
+             <tr>
+                 <td>{{ i }}</td>
+                 <td>{{ table.terminal }}</td>
+                 <td>{{ table.buyer }}</td>
+                 <td>{{ table.worker }}</td>
+                 <td>{{ table.price }}</td>
+                 <td>{{ table.balance }}</td>
+                 <td>{{ table.deposit }}</td>
+                 <td>{{ table.residue }}</td>
+                 <td>{{ table.created|date }}</td>
+             </tr>
+                 {% set i = i +1%}
+                 {% endfor %}
+             </tbody>
+         </table>
+         <div class="divider"></div>
+         {{ knp_pagination_render(pagination)|raw }}
+     </div>
+
+ {% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker();
+        });
+    </script>
+{% endblock %}

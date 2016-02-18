@@ -1,0 +1,35 @@
+{% block contentbundle_coordinates_map_widget %}
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+	<script type="text/javascript" src="{{ asset('bundles/mankapartezmain/js/add.scripts.js') }}"></script>
+    <input type="text" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+	<div id="add_map" class="map" style="width:500px;height:300px;"></div>
+{% endblock %}
+
+{% block input_autofill_widget %}
+
+    <input type="text" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+
+	<script type="text/javascript">
+	$( ".inputAutocomplite" ).autocomplete({
+		source: function( request, response ) {
+
+			$.ajax({
+				url: "{{ path('get_autocomplite_by_str',{})}}",
+				dataType: "jsonp",
+				data: {
+					page: this.element.attr('rel'),
+					str: request.term
+				},
+				success: function( data ) {
+					response( $.map( data, function( item ) {
+						return {
+							label: item.name,
+							value: item.name
+						}
+					}));
+				}
+			});
+		}
+	});
+	</script>
+{% endblock %}

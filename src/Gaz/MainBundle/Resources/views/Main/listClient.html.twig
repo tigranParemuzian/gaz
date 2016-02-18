@@ -1,0 +1,43 @@
+{% extends 'GazMainBundle::layout.html.twig' %}
+
+ {% block contentMain %}
+     <div class="container">
+         <div class="row">
+             <table class="table">
+                 <thead>
+                 <tr>
+                     <th data-field="id">Name</th>
+                     <th data-field="name">Last Name</th>
+                     <th data-field="name">Code</th>
+                     <th data-field="price">Phone</th>
+                     <th data-field="price">Company name</th>
+                     <th data-field="price">Percent</th>
+                     <th data-field="price">Deposit limit</th>
+                     <th data-field="price">Care Number</th>
+                 </tr>
+                 </thead>
+
+                 <tbody>
+                 {% for client in clients %}
+                 <tr>
+                     <td>
+                         <a href="{{ path('client_edit', {'id':client.id})}}">
+                             {{ client.name }}
+                         </a>
+                     </td>
+                     <td>
+                             {{ client.lastName}}
+                     </td>
+                     <td>{{ client.code }}</td>
+                     <td>{{ client.phone}}</td>
+                     <td>{{ client.company.name}}</td>
+                     <td>{{ client.percent}}</td>
+                     <td>{{ client.depositLimit}}</td>
+                     <td>{{ client.careNumber}}</td>
+                 </tr>
+                     {% endfor %}
+                 </tbody>
+             </table>
+         </div>
+     </div>
+ {% endblock %}

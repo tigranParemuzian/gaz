@@ -1,0 +1,32 @@
+{% extends 'GazMainBundle::layout.html.twig' %}
+ {% block contentMain %}
+        <div class="row"  style="text-align: center">
+            <div class="col-md-12">
+                    <div class="card-image" style='margin-top: 100px; font-size: 2em; font:"Roboto" ; margin-bottom: 100px'>
+                        <p style="margin-bottom: 20px"> SEZAM GAZ</p>
+                        <a href="{{ path('client') }}" type="button" class="btn btn-warning" target="_blank">Ցանկ</a>
+                        <br/>
+                    </div>
+                        <span class="card-title grey-text text-darken-3" style="margin-bottom: 20px">Աշխատանքային միջավայր</span>
+                        <br/>
+                {% if app.session.flashbag %}
+                            {% for messageError in app.session.flashbag.get('error') %}
+                                <p class="error" style="color: red"> &nbsp;&nbsp;&nbsp; {{ messageError|raw }}
+                                </p>
+                            {% endfor %}
+                {% endif %}
+                        <div class="form-group">
+                            {{ form_start(form) }}
+                            {{ form_label(form.cart) }}
+                            {{ form_widget(form.cart) }}
+                            {{ form_label(form.save) }}
+                            {{ form_widget(form.save) }}
+                            {{ form_end(form) }}
+                        </div>
+            </div>
+        </div>
+ {% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+<script src="{{ asset('bundles/gazmain/js/homepage.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,99 @@
+<?php
+
+namespace Gaz\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Change
+ *
+ * @ORM\Table(name="change")
+ * @ORM\Entity(repositoryClass="Gaz\MainBundle\Entity\Repositories\ChangeRepositories")
+ */
+class Change
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="open", type="datetime", nullable=false)
+     */
+    private $open;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="ended", type="datetime", nullable=true)
+     */
+    private $ended;
+
+    /**
+     * @var
+     * @ORM\Column(name="cash", type="integer", options={"default":0})
+     */
+    private $cash;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set open
+     *
+     * @param \DateTime $open
+     * @return Change
+     */
+    public function setOpen($open)
+    {
+        $this->open = $open;
+
+        return $this;
+    }
+
+    /**
+     * Get open
+     *
+     * @return \DateTime 
+     */
+    public function getOpen()
+    {
+        return $this->open;
+    }
+
+    /**
+     * Set ended
+     *
+     * @param \DateTime $ended
+     * @return Change
+     */
+    public function setEnded($ended)
+    {
+        $this->ended = $ended;
+
+        return $this;
+    }
+
+    /**
+     * Get ended
+     *
+     * @return \DateTime 
+     */
+    public function getEnded()
+    {
+        return $this->ended;
+    }
+}

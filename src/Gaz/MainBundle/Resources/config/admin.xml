@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <!-- station -->
+        <service id="gaz.main.admin.settings" class="Gaz\MainBundle\Admin\SettingsAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Ադմինիստրացիա" label="Գործիքներ"/>
+            <argument/>
+            <argument>Gaz\MainBundle\Entity\Settings</argument>
+            <argument>NULL</argument>
+        </service>
+
+        <!-- station -->
+        <service id="gaz.main.admin.station" class="Gaz\MainBundle\Admin\StationAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Ադմինիստրացիա" label="Գազալցակայան"/>
+            <argument/>
+            <argument>Gaz\MainBundle\Entity\Station</argument>
+            <argument>NULL</argument>
+        </service>
+
+        <!-- terminal -->
+        <service id="gaz.main.admin.terminal" class="Gaz\MainBundle\Admin\TerminalAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Ադմինիստրացիա" label="Լցակետ"/>
+            <argument/>
+            <argument>Gaz\MainBundle\Entity\Terminal</argument>
+            <argument>NULL</argument>
+        </service>
+
+        <!-- gaz -->
+        <service id="gaz.main.admin.client" class="Gaz\MainBundle\Admin\ClientAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Ադմինիստրացիա" label="Օգտատերեր"/>
+            <argument/>
+            <argument>Gaz\MainBundle\Entity\Client</argument>
+            <argument>NULL</argument>
+        </service>
+
+        <!-- gaz -->
+        <service id="gaz.main.admin.finance" class="Gaz\MainBundle\Admin\FinanceAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Ադմինիստրացիա" label="Շարժ"/>
+            <argument/>
+            <argument>Gaz\MainBundle\Entity\Finance</argument>
+            <argument>NULL</argument>
+        </service>
+
+        <!-- gaz -->
+        <service id="gaz.main.admin.company" class="Gaz\MainBundle\Admin\CompanyAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Ադմինիստրացիա" label="Խմբեր"/>
+            <argument/>
+            <argument>Gaz\MainBundle\Entity\Company</argument>
+            <argument>NULL</argument>
+        </service>
+
+        <!-- gaz -->
+        <service id="gaz.main.login.log" class="Gaz\MainBundle\Admin\LoginLogsAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Ադմինիստրացիա" label="Մուտք֊ելք"/>
+            <argument/>
+            <argument>Gaz\MainBundle\Entity\LoginProvider</argument>
+            <argument>NULL</argument>
+        </service>
+
+    </services>
+</container>

@@ -1,0 +1,356 @@
+{% extends 'GazMainBundle::layout.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/gazmain/css/myStyle.css') }}" >
+{% endblock %}
+
+{% block heater %}
+    {% block menu %}
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-sm-2 col-md-2">
+                                {% if app.session.get('workerDate') %}
+                                    {% set worker = app.session.get('workerDate') %}
+                                    {% if worker.name %}
+                                        <span> {{ worker.name }}</span>
+                                    {% else %}
+                                        <span> Announ </span>
+                                    {% endif %}
+                                    <span>{{ worker.date|date('Y.M.d H:i') }} </span>
+                                {% endif %}
+
+                            </div>
+                            <div  class="col-sm-5 col-md-5">
+                                <!-- Small modal -->
+                                <button id="calculate-secounds" type="button" class="btn btn-success">1</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".info-count">Գործարքներ</button>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".info-cost">Դրամարկղ</button>
+                                <button id="button-info-transfer" type="button" class="btn btn-primary" data-toggle="modal" data-target=".info-transfer">Փոխանցել</button>
+                            </div>
+                            <div  class="col-sm-5 col-md-5">
+                                <!-- Small modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".info-many-in-cart">Բաժանորդի տվյալներ</button>
+                                <button type="button" id="btn-info-end-work" class="btn btn-primary" data-toggle="modal" data-target=".info-end-work">Աշխատանքի ավարտ</button>
+                                <a id="logout" href="{{ path('homepage') }}" style="display: block !important;" title="Ելք" type="button" class="btn btn-primary pull-right" ><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.nav-collapse -->
+        </nav>
+    {% endblock %}
+{% verbatim %}
+<!-- info-count -->
+    <div class="modal fade info-count" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Գործարքներ</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="all-data">
+                        <p> Ընդունված գործարքներ <b> 0 </b> </p>
+                    </div>
+                    <div class="missing-data">
+                        <p> Չընդունած գործարքներ <b > 0 </b> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end info-count -->
+    <!-- info-cost -->
+    <div class="modal fade info-cost" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Դրամարկղ</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="all-data">
+                        <p> Ընդունված գումար՝ <b> 0 </b> </p>
+                    </div>
+                    <div class="cash-data">
+                        <p> Դրամարկղի գումար՝ <b> 0 </b> </p>
+                    </div>
+                    <div class="missing-data">
+                        <p> Չընդունած գումար՝ <b > 0 </b> </p>
+                    </div>
+                    <div class="cart-many">
+                        <p> Աշխատողի հաշվին կա՝ <b > 0 </b> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end info-cost -->
+    <!-- info-many-transfer -->
+    <div class="modal fade info-many-transfer" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Հերթափոխ</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="info-form-error">
+                    <p> Մուտքագրեք ներկայիս աշխատատողի և Նոր աշխատողի քարտային տվյալները։ </p>
+                    </div>
+
+                    <label class="sr-only" for="inputOldWorker">Ներկայիս աշխատատող</label>
+                    <input type="password" class="form-control" id="input-old-worker" placeholder="ներկային աշխատող">
+
+                    <label class="sr-only input-old-worker" for="inputOldWorker">Նոր աշխատող</label>
+                    <input type="password" class="form-control" id="input-new-worker" placeholder="նոր աշխատող">
+
+                    <button type="button" class="btn btn-success many-transfer">Հերթափոխվել</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end info-many-transfer -->
+    <!-- info-transfer -->
+    <div id="div-info-transfer" class="modal fade info-transfer" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Փոխանցել գումարը</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="info-form">
+                        <p> Մուտքագրեք փոխանցողի քարտային տվյալը։ </p>
+                    </div>
+
+                    <div class="form-worker">
+                        <label class="sr-only" for="inputOldWorker">Փողանցող</label>
+                        <input type="password" class="form-control" id="input-worker" placeholder="փոխանցող">
+                    </div>
+
+                    <div class="form-many">
+                        <label class="sr-only input-old-worker" for="inputOldWorker">Մուտքագրեք գումարի չափը</label>
+                        <input type="number" class="form-control" id="input-many" placeholder="գումարի չափը">
+                    </div>
+
+                    <div class="form-director">
+                        <label class="sr-only input-old-worker" for="inputOldWorker">Ստացող</label>
+                        <input type="password" class="form-control" id="input-director" placeholder="ստացող">
+                    </div>
+
+                    <div class="info-response">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end many-transfer -->
+    <!-- info-many-in-cart -->
+    <div class="modal fade info-many-in-cart" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Քարտատիրոջ հաշիվ</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="info-form-error">
+                    <p> Մուտքագրեք քարտատիրոջ քարտային կոդը և իմացեք ինֆորմացիա հաշվեկսհռի մասին։ </p>
+                    </div>
+
+                    <label class="sr-only" for="inputOldWorker">Քարտատիրոջ քարտ</label>
+                    <input type="password" class="form-control" id="input-client-code" placeholder="քարտատիրոջ քարտ">
+
+                    <div class="info">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end info-many-in-cart -->
+    <!-- info-end-work -->
+    <div class="modal fade info-end-work" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" id="info-work-end" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Ավարտել աշխատանքը</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="info-form-error">
+                    <p> Մուտքագրեք աշխատողի քարտային կոդը աշխատանքային օրը ավարտելու համար։ </p>
+                    </div>
+
+                    <label class="sr-only" for="inputOldWorker">Մքտեցրեք քարտը</label>
+                    <input type="password" class="form-control" id="input-end-work" placeholder="մոտեցրեք քարտը">
+
+                    <div class="info-last">
+
+                    </div>
+                    <div class="info">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end info-end-work -->
+{% endverbatim %}
+{% endblock %}
+
+ {% block contentMain %}
+    <div class="row" style="text-align: center; margin-top: 60px">
+        <div class="col-xs-12">
+
+        {% for id in data %}
+        <div id="main-table{{ id|first }}" class="col-lg-3 col-md-3 col-sm-8 terminal-{{ id|first }} main-table" style="border: 4px solid #fff9f6; border-radius: 10px; min-height: 290px; font-size: 12px;">
+                <!-- col-lg-6 start here -->
+            <div id="main_{{ id|first }}" class="col-lg-12 col-sm-12 url-data">
+                <!-- col-lg-6 start here -->
+                <div id="main_div_{{ id|first }}"  class=" col-lg-10 col-sm-10 tile panelRefresh cart{{ id|first }}">
+                    <!-- Start .panel -->
+                    <div class="">
+                        <button class="btn btn-info pull-left" type="button">
+                            {{ id|first }}
+                        </button>
+                        <p id="{{ id|first }}"></p>
+                    </div>
+                    <div class="p0">
+                        <div class="weather snow">
+                            <p class="zakaz-{{ id|first }}"></p>
+                        <p class="data{{ id|first }}"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End .panel -->
+
+                <div class=" col-lg-1 col-sm-1 data-input pull-left">
+                    <input placeholder="կոդ" id="by_val{{ id|first }}" value="" type="password" class="form-control" >
+                </div>
+
+                <div class=" col-lg-1 col-sm-1 icon pull-right" style="margin: 4px -20px 1px 0">
+                    <input type="hidden" class="form-control" id="terminal-id-remove{{ id|first }}" value="{{ id|first }}">
+                    <button id="btn-success-{{ id|first }}" type="submit" class="btn btn-success pull-right"  data-toggle="modal" data-target=".info-success-finance">v</button>
+                    <button id="btn-dell-{{ id|first }}" type="submit" class="btn btn-danger pull-right"  data-toggle="modal" data-target=".info-remove-finance">x</button>
+                </div>
+            </div>
+            <div class="col-lg-12 col-sm-12 data_{{ id|first }}">
+                <!-- col-lg-6 start here -->
+                <div class="panelRefresh">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        <div class="degree color-red real_price_val{{ id|first }}" style="font-size: 18px; text-indent: hanging;">Վճարում չկա:</div>
+                        <div class="count" style="margin-top: 10px">
+                        </div>
+                    </div>
+                    <div class="p0">
+                        <div class="weather snow">
+                            <div class="location pb15 cost_price_val{{ id|first }}">
+                                <i class="l-basic-geolocalize-01"></i> Վճարում չի կատարվել
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End .panel -->
+            </div>
+            <!-- col-lg-6 end here -->
+        </div>
+    {% endfor %}
+    </div>
+</div>
+ {% verbatim %}
+    <!-- START info remove finance -->
+    <div class="modal fade info-remove-finance" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Չեղարկել վերջին գործարգը</h4>
+                </div>
+                <div class="modal-body">
+
+                    <label class="sr-only" for="exampleInputEmail3">Աշխատող</label>
+                    <input type="password" class="form-control" id="remove-finance" placeholder="աշխատող">
+
+                    <div class="info">
+                        <p> Ներկայիս աշխատատող դաշտը լրացված չէ ! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END info-remove-finance -->
+
+    <!-- START info-success-finance -->
+    <div class="modal fade info-success-finance" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="mySmallModalLabel">Կատարել փոխանցում</h4>
+                </div>
+                <div class="modal-body">
+
+                    <label class="sr-only" for="exampleInputEmail3">Հաճախորդ</label>
+                    <input type="password" class="form-control" id="pay-transfer" placeholder="հաճախորդ">
+
+                    <div class="info">
+                        <p> Վճարողիքարտային դաշտը լրացված չէ ! </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END info-success-finance -->
+{% endverbatim %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/gazmain/js/data.js') }}"></script>
+    <script src="{{ asset('bundles/gazmain/js/dataWorcer.js') }}"></script>
+    <script src="{{ asset('bundles/gazmain/js/transfer.js') }}"></script>
+
+    <script>
+        setTimeout(function(){
+            location.reload();
+        }, 600000);
+    </script>
+{% endblock %}

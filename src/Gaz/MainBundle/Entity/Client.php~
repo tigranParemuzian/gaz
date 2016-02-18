@@ -1,0 +1,467 @@
+<?php
+
+namespace Gaz\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation\Groups;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
+
+/**
+ * Client
+ *
+ * @ORM\Table(name="client", indexes={ @ORM\Index(name="code", columns={"code"})})
+ *
+ * @ORM\Entity(repositoryClass="Gaz\MainBundle\Entity\Repositories\ClientRepositories")
+ * @UniqueEntity("code", message="entity.duplicate")
+ *
+ */
+class Client
+{
+	const FREE = 0;
+	const TRANSFER = 1;
+	const CASH = 2;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var integer
+	 * @Assert\NotBlank()
+	 * @Assert\Length(min=10, max=10)
+     * @ORM\Column(name="code", type="string", length=10, nullable=false,  unique=true)
+     */
+    private $code;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=100, nullable=false )
+     * @Groups({"client"})
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last_name", type="string", length=150, nullable=true)
+     * @Groups({"client"})
+     */
+    private $lastName;
+
+	/**
+     * @var string
+     *
+     * @ORM\Column(name="care_number", type="string", length=10, nullable=false)
+     * @Groups({"client"})
+     */
+    private $careNumber;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="phone", type="integer", nullable=true)
+     * @Groups({"client"})
+     */
+    private $phone;
+
+	/**
+     * @var integer
+     *
+     * @ORM\Column(name="deposit_limit", type="integer", nullable=true)
+     * @Groups({"client"})
+     */
+    private $depositLimit = self::FREE;
+
+	/**
+	 * @var float
+	 *
+	 * @ORM\Column(name="percent", type="float", nullable=true)
+     * @Groups({"client"})
+	 */
+	private $percent = self::FREE;
+
+	/**
+	 * @var integer
+	 *
+	 * @ORM\Column(name="payment_types", type="smallint", length=3, nullable=false)
+     * @Groups({"client"})
+	 */
+	private $paymentTypes = self::CASH;
+
+	/**
+	 * @ORM\OneToMany(targetEntity="Finance", mappedBy="clientSale")
+	 */
+	private $financeSale;
+
+	/**
+	 * @ORM\OneToMany(targetEntity="Finance", mappedBy="clientBuy")
+	 */
+	private $financeBuy;
+
+	/**
+	 * @ORM\ManyToOne(targetEntity="Company", inversedBy="client")
+	 * @ORM\JoinColumn(name="company_id", referencedColumnName="id", nullable=false)
+     * @Groups({"client"})
+	 */
+	private $company;
+
+    /**
+     * @var
+     * @ORM\Column(name="cash_info", type="integer", nullable=true)
+     */
+    private $cashInfo;
+
+    /**
+     * @var
+     * @ORM\Column(name="created", type="datetime", nullable=false)
+     */
+    private $created;
+    
+
+    public function __toString()
+    {
+        return ($this->id) ? $this->name : 'New CR Info';
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set code
+     *
+     * @param integer $code
+     * @return Client
+     */
+    public function setCode($code)
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * Get code
+     *
+     * @return integer 
+     */
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Client
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set lastName
+     *
+     * @param string $lastName
+     * @return Client
+     */
+    public function setLastName($lastName)
+    {
+		if($lastName === null) {
+			$this->lastName = 'no last name';
+		}
+		else {
+			$this->lastName = $lastName;
+		}
+
+        return $this;
+    }
+
+    /**
+     * Get lastName
+     *
+     * @return string 
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * Set phone
+     *
+     * @param integer $phone
+     * @return Client
+     */
+    public function setPhone($phone)
+    {
+		if($phone === null)	{
+			$this->phone = 000000000;
+		}
+		else {
+			$this->phone = $phone;
+		}
+        return $this;
+    }
+
+    /**
+     * Get phone
+     *
+     * @return integer 
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+	/**
+	 * Set paymentTypes
+	 *
+	 * @param $paymentTypes
+	 * @return $this
+	 * @throws \Exception
+	 */
+	public function setPaymentTypes($paymentTypes)
+	{
+		if ($paymentTypes == self::CASH 	||
+			$paymentTypes == self::TRANSFER ||
+			$paymentTypes == self::FREE )
+		{
+			$this->paymentTypes = $paymentTypes;
+		}
+		else
+		{
+			throw new \Exception('PaymentTypes value for Finanse status');
+		}
+
+		$this->paymentTypes = $paymentTypes;
+
+		return $this;
+	}
+
+	/**
+	 * Get paymentTypes
+	 *
+	 * @return integer
+	 */
+	public function getPaymentTypes()
+	{
+		return $this->paymentTypes;
+	}
+
+    /**
+     * Set depositLimit
+     *
+     * @param integer $depositLimit
+     * @return Client
+     */
+    public function setDepositLimit($depositLimit)
+    {
+        $this->depositLimit = $depositLimit;
+
+        return $this;
+    }
+
+    /**
+     * Get depositLimit
+     *
+     * @return integer 
+     */
+    public function getDepositLimit()
+    {
+        return $this->depositLimit;
+    }
+
+    /**
+     * Set percent
+     *
+     * @param float $percent
+     * @return Client
+     */
+    public function setPercent($percent)
+    {
+        $this->percent = $percent;
+
+        return $this;
+    }
+
+    /**
+     * Get percent
+     *
+     * @return float 
+     */
+    public function getPercent()
+    {
+        return $this->percent;
+    }
+
+    /**
+     * Set company
+     *
+     * @param \Gaz\MainBundle\Entity\Company $company
+     * @return Client
+     */
+    public function setCompany(\Gaz\MainBundle\Entity\Company $company)
+    {
+        $this->company = $company;
+
+        return $this;
+    }
+
+    /**
+     * Get company
+     *
+     * @return \Gaz\MainBundle\Entity\Company 
+     */
+    public function getCompany()
+    {
+        return $this->company;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->financeSale = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->financeBuy = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add financeSale
+     *
+     * @param \Gaz\MainBundle\Entity\Finance $financeSale
+     * @return Client
+     */
+    public function addFinanceSale(\Gaz\MainBundle\Entity\Finance $financeSale)
+    {
+        $this->financeSale[] = $financeSale;
+
+        return $this;
+    }
+
+    /**
+     * Remove financeSale
+     *
+     * @param \Gaz\MainBundle\Entity\Finance $financeSale
+     */
+    public function removeFinanceSale(\Gaz\MainBundle\Entity\Finance $financeSale)
+    {
+        $this->financeSale->removeElement($financeSale);
+    }
+
+    /**
+     * Get financeSale
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getFinanceSale()
+    {
+        return $this->financeSale;
+    }
+
+    /**
+     * Add financeBuy
+     *
+     * @param \Gaz\MainBundle\Entity\Finance $financeBuy
+     * @return Client
+     */
+    public function addFinanceBuy(\Gaz\MainBundle\Entity\Finance $financeBuy)
+    {
+        $this->financeBuy[] = $financeBuy;
+
+        return $this;
+    }
+
+    /**
+     * Remove financeBuy
+     *
+     * @param \Gaz\MainBundle\Entity\Finance $financeBuy
+     */
+    public function removeFinanceBuy(\Gaz\MainBundle\Entity\Finance $financeBuy)
+    {
+        $this->financeBuy->removeElement($financeBuy);
+    }
+
+    /**
+     * Get financeBuy
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getFinanceBuy()
+    {
+        return $this->financeBuy;
+    }
+
+    /**
+     * Set careNumber
+     *
+     * @param string $careNumber
+     * @return Client
+     */
+    public function setCareNumber($careNumber)
+    {
+        $this->careNumber = $careNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get careNumber
+     *
+     * @return string 
+     */
+    public function getCareNumber()
+    {
+        return $this->careNumber;
+    }
+
+    /**
+     * Set cashInfo
+     *
+     * @param integer $cashInfo
+     * @return Client
+     */
+    public function setCashInfo($cashInfo)
+    {
+        $this->cashInfo = $cashInfo;
+
+        return $this;
+    }
+
+    /**
+     * Get cashInfo
+     *
+     * @return integer 
+     */
+    public function getCashInfo()
+    {
+        return $this->cashInfo;
+    }
+}

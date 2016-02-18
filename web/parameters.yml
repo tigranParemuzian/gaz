@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: gaz
+    database_user: postgres
+    database_password: xxlxxl123
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: ThisTokenIsNotSoSecretChangeIt
+    url_external: http://46.130.127.109:8739/jsonp/GetLast
+    url_local: http://192.168.1.3:8739/jsonp/GetLast

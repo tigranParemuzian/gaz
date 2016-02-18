@@ -1,0 +1,37 @@
+{% extends 'GazMainBundle::layout.html.twig' %}
+
+ {% block contentMain %}
+     <div class="container">
+         <div class="row">
+             <table class="table">
+                 <thead>
+                 <tr>
+                     <th data-field="id">Name</th>
+                     <th data-field="name">Code</th>
+                     <th data-field="price">Payment type</th>
+                     <th data-field="price">Group type</th>
+                     <th data-field="price">Percent</th>
+                     <th data-field="price">Deposit limit</th>
+                 </tr>
+                 </thead>
+
+                 <tbody>
+                 {% for company in companys %}
+                 <tr>
+                     <td>
+                         <a href="{{ path('company_edit', {'id':company.id})}}">
+                             {{ company.name }}
+                         </a>
+                     </td>
+                     <td>{{ company.code }}</td>
+                     <td>{{ company.paymentTypes}}</td>
+                     <td>{{ company.groupType}}</td>
+                     <td>{{ company.percent}}</td>
+                     <td>{{ company.depositLimit}}</td>
+                 </tr>
+                     {% endfor %}
+                 </tbody>
+             </table>
+         </div>
+     </div>
+ {% endblock %}
