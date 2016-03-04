@@ -188,16 +188,26 @@ function manyTransfer()
     var infoResponse = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.info-response').hide();
     var formWorker = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.form-worker');
     var formInfo = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.info-form');
+    var formSelect = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.select-type').hide();
+    var formBack = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.back').hide();
+    var formBackLink = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.back >a');
+    var formOther = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.other').hide();
 
     $('#button-info-transfer').click(function(){
 
         formMany.hide();
         formDirector.hide();
         infoResponse.hide();
+        formSelect.hide();
+        formOther.hide();
+        formBack.hide();
         formWorker.show();
+        $('#input-worker').show();
         $('#input-worker').val(null);
         $('#input-many').val(null);
         $('#input-director').val(null);
+        $('#input-message').val(null);
+        formInfo.show();
         formInfo.html( '<p> Մուտքագրեք փոխանցողի քարտային տվյալը։</p>');
     });
 
@@ -227,23 +237,90 @@ function manyTransfer()
 
                             if(many != null)
                             {
-                                formMany.hide();
-                                formDirector.show();
-                                formInfo.html( '<p>'+ many +' գումարը ստանալու համար խնդրում ենք մուտքագրել ստացողի քարտային տվիալները:</p>');
 
-                                $('#input-director').select();
+                                jQuery.ajax({
+                                    url: "/api/gazs/" + codeWorker + "/many",
+                                    type: "GET",
+                                    contentType: 'application/json; charset=utf-8',
+                                    async: true,
+                                    success: function (resultData) {
+                                        if(parseInt(many) <= parseInt(resultData)) {
+                                            formMany.hide();
+                                            formSelect.show();
+                                            infoResponse.html(null);
+                                        }
+                                        else {
+                                            infoResponse.show();
+                                            infoResponse.html( '<p style="color: red">Փոխանցումը հնարավոր չէ կատարել: Աշխատողի հաշվին գումարը բավարար չէ:<br/> Հաշվին կա ' + parseInt(resultData) + ' դրամ</p>');
+                                            $('#input-many').val(null);
+                                            $('#input-many').select();
+                                        }
+                                    },
+                                    error: function (jqXHR, textStatus, errorThrown) {
+                                        if(jqXHR.status == 404)
+                                        {
+                                            infoResponse.show();
+                                            infoResponse.html( '<p style="color: red">Փոխանցումը հնարավոր չէ կատարել: Աշխատողի ' + codeWorker + ' գոյություն չունի</p>');
+                                            $('#input-many').val(null);
+                                            $('#input-many').select();
+                                        }
+                                        console.log(jqXHR, textStatus, errorThrown);
+                                    }
+                                });
 
+
+                                formSelect.on('change', function (e) {
+
+                                    var optionSelected = $("option:selected", this).text();
+                                    if(optionSelected === 'Փողանցել')
+                                    {
+                                        formSelect.hide();
+                                        formDirector.show();
+                                        formBack.show();
+                                        formInfo.html( '<p>'+ many +' գումարը ստանալու համար խնդրում ենք մուտքագրել ստացողի քարտային տվիալները:</p>');
+                                        $('#input-director').select();
+
+                                    }
+                                    else if(optionSelected === 'Աիլ ծախսեր')
+                                    {
+
+                                        formSelect.hide();
+                                        formOther.show();
+                                        formBack.show();
+                                        formInfo.html( '<p>'+ many +' գումարը ստանալու համար խնդրում ենք մուտքագրել ծախսեի նպատակը:</p>');
+                                        $('#input-message').select();
+                                    }
+
+                                    formBackLink.click(function(){
+                                        formSelect.show();
+                                        formOther.hide();
+                                        formBack.hide();
+                                        formDirector.hide();
+                                        formInfo.html( '<p>'+ many +' գումարը ստանալու համար խնդրում ենք մուտքագրել ելքի նպատակը:</p>');
+                                    });
+                                });
                                 $(document).keypress(function(e) {
                                     if (e.which == 13) {
 
                                         var inputData = e.target;
-                                        console.log(inputData.id);
+
                                         if (inputData.id == 'input-director') {
                                             var codeDirector = inputData.value;
 
                                             if (codeDirector.length == 10) {
 
                                                 postManyTransfer(codeWorker, many, codeDirector);
+
+                                            }
+                                        }
+                                        else if(inputData.id == 'input-message')
+                                        {
+                                            var message = inputData.value;
+
+                                            if (message.length != 0) {
+                                                console.log(message);
+
+                                                postManyTransfer(codeWorker, many, null, message);
 
                                             }
                                         }
@@ -272,10 +349,11 @@ function manyTransfer()
     })
 }
 
-function postManyTransfer(worker, cash, director)
+function postManyTransfer(worker, cash, director, message)
 {
 
     var infoResponse = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.info-response');
+    var formBack = $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.back').hide();
     infoResponse.show();
     jQuery.ajax({
         url: '/api/gazs/manies/transfers',
@@ -287,18 +365,32 @@ function postManyTransfer(worker, cash, director)
         data: JSON.stringify({
             "worker": worker,
             "cash": cash,
-            "director": director
+            "director": director,
+            "message": message
         }),
         success:function(ansvwe)
         {
+            window.navbarData();
             if(ansvwe.message== "success") {
 
                 $('#input-director').hide();
+                $('#input-message').hide();
+                $('#input-worker').hide();
+                $('.info-transfer>.modal-dialog>.modal-content>.modal-body>.info-form').hide();
 
-                infoResponse.html('<p>' + ansvwe.cash + ' դրամ գումարը հաջողությամբ փոխանցված է '
-                    + ansvwe.senderName + 'ից '
-                    + ansvwe.recipientName +'ի հաշվին:'
-                    + ansvwe.senderName +'ի հաշվին մնաց <b>'+ ansvwe.cashBalance +'</b> դրամ</p>');
+                if(ansvwe.senderName != ansvwe.recipientName && ansvwe.transferInfo == null) {
+                    infoResponse.html('<p>' + ansvwe.cash + ' դրամ գումարը հաջողությամբ փոխանցված է '
+                        + ansvwe.senderName + 'ից '
+                        + ansvwe.recipientName +'ի հաշվին:'
+                        + ansvwe.senderName +'ի հաշվին մնաց <b>'+ ansvwe.cashBalance +'</b> դրամ</p>');
+                }
+                else {
+                    infoResponse.html('<p>' + ansvwe.cash + ' դրամ գումարը հաջողությամբ փոխանցված է '
+                        + ansvwe.senderName + 'ից '
+                        + ansvwe.transferInfo +'ի նպատակով:'
+                        + ansvwe.senderName +'ի հաշվին մնաց <b>'+ ansvwe.cashBalance +'</b> դրամ</p>')
+                }
+
             }
             else {
 

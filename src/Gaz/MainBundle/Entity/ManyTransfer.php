@@ -54,6 +54,12 @@ class ManyTransfer
     private $recipient;
 
     /**
+     * @var
+     * @ORM\Column(name="message", type="text", nullable=true)
+     */
+    private $message;
+
+    /**
      * Get id
      *
      * @return integer 
@@ -153,6 +159,22 @@ class ManyTransfer
     public function getRecipient()
     {
         return $this->recipient;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMessage()
+    {
+        return $this->message;
+    }
+
+    /**
+     * @param mixed $message
+     */
+    public function setMessage($message)
+    {
+        $this->message = $message;
     }
 
 }

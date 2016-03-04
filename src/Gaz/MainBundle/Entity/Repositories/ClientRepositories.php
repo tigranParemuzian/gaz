@@ -50,7 +50,7 @@ class ClientRepositories extends EntityRepository
 				->createQuery('SELECT c
 							FROM GazMainBundle:Client c
 							LEFT JOIN c.company co
-							WHERE co.groupType !=6 AND co.groupType !=3
+							WHERE co.groupType != 6 AND co.groupType != 3
 							ORDER BY c.id
 							')->getResult();
 		}

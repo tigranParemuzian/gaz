@@ -536,26 +536,39 @@ class DataController extends FOSRestController
     {
         $em = $this->getDoctrine()->getManager();
 
-        // get date form request
-        $worker=$request->get('worker');
-        $cash=$request->get('cash');
-        $director=$request->get('director');
+//        // get date form request
+//        $worker=$request->get('worker');
+//        $cash=$request->get('cash');
+//        $director=$request->get('director');
 
-        if($worker != null && $cash != null && $director != null)
+        // get content data
+        $obj = json_decode($request->getContent());
+
+        // get date form request
+        $worker = $obj->worker;
+        $cash = $obj->cash;
+        $director = $obj->director ? $obj->director : null;
+        $message = $obj->message ? $obj->message : null;
+
+        if($worker != null && $cash != null && ($director != null || $message != null))
         {
             // if exist get transfer
             $maxManyTransfer = $em->getRepository('GazMainBundle:ManyTransfer')->findBySenderCode($worker);
-
+            if($director == null)
+            {
+                $director = $worker;
+            }
             $data = array();
             // if transfer not exist
             if(!$maxManyTransfer) {
                 // get data for create new transfer
+
                 $manyTransferData = $em->getRepository('GazMainBundle:Client')->findManyTransfer($worker, $director);
                 // calculate data and create data for transfer
                 foreach($manyTransferData as $transferData)
                 {
                     // check sender
-                    if(isset($transferData['sender']))
+                    if(isset($transferData['sender']) && ($transferData['sender'] instanceof Client))
                     {
                         $data['sender'] = $transferData['sender'];
                         $senderName = $transferData['sender']->getName();
@@ -577,9 +590,12 @@ class DataController extends FOSRestController
                             return array('senderName'=>$senderName, 'cash'=>$cash, 'cashBalance'=>$transferData['sender']->getCashInfo(), 'message'=>'worning');
                         }
                     }
-                    elseif(isset($transferData['recipient']))
+                    elseif(isset($transferData['recipient']) && ($transferData['recipient'] instanceof Client) && ($transferData['recipient'] != $transferData['sender']) && $message === null)
                     {
                         $data['recipient'] = $transferData['recipient'];
+                        // send many
+                        $data['recipient']->setCashInfo($data['recipient']->getCashInfo() + $cash);
+                        $em->persist($data['recipient']);
                         $recipientName = $transferData['recipient']->getName();
                     }
                 }
@@ -591,7 +607,7 @@ class DataController extends FOSRestController
 
                 foreach($manyTransferData as $transferData)
                 {
-                    if(isset($transferData['sender']))
+                    if(isset($transferData['sender']) && ($transferData['sender'] instanceof Client))
                     {
                         $data['sender'] = $transferData['sender'];
                         $senderName = $transferData['sender']->getName();
@@ -614,10 +630,12 @@ class DataController extends FOSRestController
                             return array('senderName'=>$senderName, 'cash'=>$cash, 'cashBalance'=>$transferData['sender']->getCashInfo(), 'message'=>'worning');
                         }
                     }
-                    elseif(isset($transferData['recipient']))
+                    elseif(isset($transferData['recipient']) && ($transferData['recipient'] instanceof Client) && ($transferData['recipient'] != $transferData['sender']) && $message === null)
                     {
-                        // get recipient for many transfer
                         $data['recipient'] = $transferData['recipient'];
+                        // send many
+                        $data['recipient']->setCashInfo($data['recipient']->getCashInfo() + $cash);
+                        $em->persist($data['recipient']);
                         $recipientName = $transferData['recipient']->getName();
                     }
                 }
@@ -633,13 +651,13 @@ class DataController extends FOSRestController
                 $manyTransfer->setCreated(new  \DateTime('now'));
                 $manyTransfer->setSender($data['sender']);
                 $manyTransfer->setRecipient($data['recipient']);
-
+                $message ? $manyTransfer->setMessage($message) : $manyTransfer->setMessage(' ');
                 $em->persist($manyTransfer);
                 $em->flush();
             }
         }
 
-        return array( 'recipientName'=>$recipientName, 'senderName'=>$senderName, 'cash'=>$cash, 'cashBalance'=>$cashBalance, 'message'=>'success');
+        return array( 'recipientName'=>$recipientName, 'senderName'=>$senderName, 'cash'=>$cash, 'cashBalance'=>$cashBalance, 'message'=>'success', 'transferInfo'=>$message);
     }
 
     /**
@@ -815,5 +833,27 @@ class DataController extends FOSRestController
         }
 
         return $data;
+    }
+
+    /**
+     * @param $code
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  section="Gaz",
+     *  description="This function is used to get many by clint code.",
+     *  statusCodes={
+     *         202="Returned when created",
+     *         404="Return when user not found", }
+     * )
+     *
+     *
+     * @Rest\View()
+     */
+    public function getManyAction($code)
+    {
+        $many = $this->getDoctrine()->getManager()->getRepository('GazMainBundle:Client')->findOneByCode($code)->getCashInfo();
+
+        return $many;
     }
 }
